@@ -1,0 +1,41 @@
+SMART-onderzoek — website
+==========================
+
+BESTANDEN
+- index.html      → startpagina met keuze tussen ouders/scholen
+- scholen.html     → volledige pagina voor scholen
+- ouders.html      → volledige pagina voor ouders
+- assets/style.css → alle vormgeving (kleuren, lettertypes, lay-out)
+- assets/img/      → map om je eigen afbeeldingen in te zetten
+
+UPLOADEN NAAR EEN SERVER
+Upload de hele map (met de assets-submap erin) naar je server, met
+dezelfde structuur. index.html moet in de hoofdmap staan zodat
+bijvoorbeeld "www.jouwdomein.be/index.html" de startpagina toont.
+
+TEKST AANPASSEN
+Open een .html-bestand met een gewone teksteditor (Kladblok, VS Code,
+TextEdit in platte-tekstmodus — geen Word). Zoek de zin die je wil
+wijzigen en typ je eigen tekst erover. Laat de stukjes tussen <> staan,
+dat zijn de HTML-tags die de opmaak bepalen.
+
+KLEUREN AANPASSEN
+Alle kleuren staan op één plek: bovenaan in assets/style.css, onder
+":root { ... }". Bijvoorbeeld:
+    --blue: #00ADEF;
+    --orange: #F68712;
+Wijzig de hexcode achter een kleur en die kleur verandert overal op
+de site.
+
+EEN AFBEELDING TOEVOEGEN
+1. Zet je afbeelding in de map assets/img/ (bv. assets/img/klas.jpg).
+2. Zoek in ouders.html of scholen.html het uitgecommentarieerde
+   voorbeeld (tussen <!-- en -->) net onder de hero-sectie.
+3. Verwijder de <!-- en --> eromheen, en pas src="..." aan naar het
+   pad van je eigen foto, bv. src="assets/img/klas.jpg".
+4. Je kan ook op elke andere plek een afbeelding toevoegen met:
+   <img src="assets/img/jouwfoto.jpg" alt="omschrijving van de foto">
+
+LOKAAL TESTEN
+Dubbelklik op index.html om de site in je browser te openen en te
+controleren voor je uploadt.
